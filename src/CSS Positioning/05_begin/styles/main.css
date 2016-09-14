@@ -19,7 +19,9 @@ em {
 }
 
 .blueBox {
-    background: #627da0; 
+    background: #627da0;
+    position: inherit;
+    left: 200px;
 }
 
 .greenBox {
@@ -27,7 +29,8 @@ em {
 }
 
 .container {
-    /*background: rgba(0,0,0,5);
+    background: rgba(0,0,0,5);
     width: 200px;
-    height: 200px;*/
+    height: 200px;
+    position: relative;
 }
