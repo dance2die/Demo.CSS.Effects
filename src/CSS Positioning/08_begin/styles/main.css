@@ -19,8 +19,12 @@ em {
 }
 
 .blueBox {
-
+    margin: 0 auto;
 }
 .container {
-
+    position: absolute;
+    top: 50%;
+    margin-top: -50px;
+    left: 0;
+    width: 100%;
 }
