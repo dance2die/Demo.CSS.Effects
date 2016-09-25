@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Selectors Test Ground</title>
+
+    <style>
+        label > input[type=checkbox]:checked {
+            color: red;
+        }
+
+        input[type=checkbox]:checked + label {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <form id="checkBoxForm">
+        <ul>
+            <li>
+                <input type="checkbox"><label>Checkbox1</label>
+            </li>
+            <li>
+                <label><input type="checkbox">Checkbox2</label>
+            </li>
+            <li>
+                <label><input type="checkbox">Checkbox3</label>
+            </li>
+        </ul>
+    </form>
+</body>
