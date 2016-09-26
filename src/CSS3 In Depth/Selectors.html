@@ -5,13 +5,14 @@
     <title>Selectors Test Ground</title>
 
     <style>
-        label > input[type=checkbox]:checked {
-            color: red;
-        }
-
         input[type=checkbox]:checked + label {
             color: red;
         }
+
+        input[type=checkbox]:checked ~ label{
+            text-shadow: #EEEE00 0 0 10px, #FF0000 5px 5px 5px;
+        }
+
     </style>
 </head>
 <body>
@@ -27,5 +28,13 @@
                 <label><input type="checkbox">Checkbox3</label>
             </li>
         </ul>
+
+        <div class="checkbox">
+            <input name="IncludeContacts" id="includeContactsCheckBox" type="checkbox">
+            <input name="IncludeContacts" type="hidden" value="false">
+            <label for="includeContactsCheckBox">
+                Include contacts in search result?
+            </label>
+        </div>
     </form>
 </body>
