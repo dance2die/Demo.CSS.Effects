@@ -5,20 +5,35 @@
     <title>Selectors Test Ground</title>
 
     <style>
-        label > input[type=checkbox]:checked {
-            color: red;
-        }
+        /*label > input[type=checkbox]:checked {*/
+            /*color: red;*/
+        /*}*/
 
         input[type=checkbox]:checked + label {
             color: red;
         }
+
+        p {position: relative;}
+        p:before {
+            -webkit-transform: rotate(180deg);
+            content: 'bananas';
+            font-weight: bold;
+            position: absolute;
+            top: -1em;
+        }
+
+        p:after {
+            content: 'yummy';
+        }
     </style>
 </head>
 <body>
+    <p> Were </p>
+
     <form id="checkBoxForm">
         <ul>
             <li>
-                <input type="checkbox"><label>Checkbox1</label>
+                <input id="ch1" type="checkbox"><label for="ch1">Checkbox1</label>
             </li>
             <li>
                 <label><input type="checkbox">Checkbox2</label>
