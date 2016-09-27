@@ -16,21 +16,44 @@
             text-shadow: #EEEE00 0 0 10px, #FF0000 5px 5px 5px;
         }
 
-        p {position: relative;}
-        p:before {
-            -webkit-transform: rotate(180deg);
-            content: 'bananas';
-            font-weight: bold;
-            position: absolute;
-            top: -1em;
+        /*p {position: relative;}*/
+        /*p:before {*/
+            /*-webkit-transform: rotate(180deg);*/
+            /*content: 'bananas';*/
+            /*font-weight: bold;*/
+            /*position: absolute;*/
+            /*top: -1em;*/
+        /*}*/
+
+        /*p:after {*/
+            /*content: 'yummy';*/
+        /*}*/
+
+        blockquote p:before,
+        blockquote p:after {
+            font-size: 2em;
+            color: #C7573A;
+            line-height: 0;
+            vertical-align: middle;
         }
 
-        p:after {
-            content: 'yummy';
+        blockquote p:first-child:before {
+            content: '\275D';
+            margin: 0 5px 0 -40px;
         }
-    </style>
+        blockquote p:last-child:after {
+            content: '\275E';
+            margin: 0 -40px 0 5px;
+        }
+      </style>
 </head>
 <body>
+
+    <blockquote>
+        <p>With generated content you can create text effects.</p>
+        <p>We'll cover other uses next.</p>
+    </blockquote>
+
     <p> Were </p>
 
     <form id="checkBoxForm">
